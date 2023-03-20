@@ -1,6 +1,7 @@
 export const wrap = (text: string, column: number) => {
     checkIfNegativeColumn(column);
-    return text.replace(text[column], `\n${text[column]}`);
+    const charAtColumn = text[column];
+    return text.replace(charAtColumn, `\n${charAtColumn}`);
 }
 
 const checkIfNegativeColumn = (column: number) => {
