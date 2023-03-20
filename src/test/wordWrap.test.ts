@@ -1,3 +1,4 @@
+import { wrap } from "../core/wordWrap";
 
 describe('Word Wrap test', () => {
     it('should return the same string if it is empty', () => {
